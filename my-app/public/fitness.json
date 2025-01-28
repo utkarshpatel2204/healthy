@@ -1,0 +1,9 @@
+[
+    {
+      "heading": "Sample Video",
+      "date": "2025-01-28",
+      "madeBy": "John Doe",
+      "description": "This is a sample description of the video.",
+      "videoLink": "https://www.youtube.com/watch?v=sampleLink"
+    }
+  ]
