@@ -1,0 +1,151 @@
+
+   {
+      "name": "abc",
+      "password": "abc",
+      "photo": "/images/avatar.png",
+      "weight": {
+        "currentWeight": 70,
+        "weightGoal": 65
+      },
+      "steps":{
+        "walkingSteps": 6000,
+        "stepsGoal":10000
+      },  
+      "sleep":{
+        "bedTime": "10:00 PM",
+        "wakeUpTime": "06:00 AM"
+      }, 
+      "water": 8,
+      "calories": {
+        "breakfast": 300,
+        "lunch": 600,
+        "dinner": 500,
+        "snack": 200
+      },
+      "orders": [
+    {
+      "image": "/images/orders1.png",
+      "details": {
+        "title": "Berry Bliss salad and 2 more",
+        "orderTotal": {
+          "amount": 64
+        },
+        "status": "One day",
+        "timestamps": {
+          "orderPlaced": {
+            "date": "10 Dec 2023",
+            "time": "9:36 PM"
+          },
+          "delivered": {
+            "date": "10 Dec 2023",
+            "time": "10:12 PM"
+          }
+        }
+      }
+    },
+    {
+      "image": "/images/orders1.png",
+      "details": {
+        "title": "Tropical Fruit Bowl and 1 more",
+        "orderTotal": {
+          "amount": 52
+        },
+        "status": "one day",
+        "timestamps": {
+          "orderPlaced": {
+            "date": "12 Dec 2023",
+            "time": "1:15 PM"
+          },
+          "delivered": {
+            "date": "12 Dec 2023",
+            "time": "2:00 PM"
+          }
+        }
+      }
+    },
+    {
+      "image": "/images/orders1.png",
+      "details": {
+        "title": "Mediterranean Wraps and 3 more",
+        "orderTotal": {
+          "amount": 75
+        },
+        "status": "one days",
+        "timestamps": {
+          "orderPlaced": {
+            "date": "08 Dec 2023",
+            "time": "6:45 PM"
+          },
+          "delivered": {
+            "date": "10 Dec 2023",
+            "time": "10:00 AM"
+          }
+        }
+      }
+    },
+    {
+      "image": "/images/orders1.png",
+      "details": {
+        "title": "Grilled Chicken Sandwich and 1 more",
+        "orderTotal": {
+          "amount": 58
+        },
+        "status": "one day",
+        "timestamps": {
+          "orderPlaced": {
+            "date": "11 Dec 2023",
+            "time": "5:20 PM"
+          },
+          "delivered": {
+            "date": "11 Dec 2023",
+            "time": "6:00 PM"
+          }
+        }
+      }
+    }
+  ],
+
+    "favourites":[
+      { 
+        "image": "/images/orders1.png",
+        "title":"Berry Bliss salad" ,
+        "calories":150,
+        "details": ["Savor the burst of summer flavors with each bite. This dish is perfect for picnics, barbecues, or as a light and satisfying lunch","A perfect balance of sweet, savory, and zesty goodness."] ,
+        "price":64,
+        "topic":["High Protein","Low carb","150 g"]
+
+      },
+      {
+        "image": "/images/orders1.png",
+        "title":"Berry Bliss salad" ,
+        "calories":150,
+        "details": ["Savor the burst of summer flavors with each bite. This dish is perfect for picnics, barbecues, or as a light and satisfying lunch","A perfect balance of sweet, savory, and zesty goodness."] ,
+        "price":64,
+        "topic":["High Protein","Low carb","150 g"]
+
+      },
+      {
+        "image": "/images/orders1.png",
+        "title":"Berry Bliss salad" ,
+        "calories":150,
+        "details": ["Savor the burst of summer flavors with each bite. This dish is perfect for picnics, barbecues, or as a light and satisfying lunch","A perfect balance of sweet, savory, and zesty goodness."] ,
+        "price":64,
+        "topic":["High Protein","Low carb","150 g"]
+
+      },
+      {
+        "image": "/images/orders1.png",
+        "title":"Berry Bliss salad" ,
+        "calories":150,
+        "details": ["Savor the burst of summer flavors with each bite. This dish is perfect for picnics, barbecues, or as a light and satisfying lunch","A perfect balance of sweet, savory, and zesty goodness."] ,
+        "price":64,
+        "topic":["High Protein","Low carb","150 g"]
+
+      }
+    ]
+
+    }
+  
+
+  
+  
