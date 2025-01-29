@@ -35,7 +35,7 @@ const VideoGallery = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-6">Healthy Feed</h1>
+      <h1 className="text-2xl font-bold mb-6">how are you Healthy Feed</h1>
       <div className=" h-full gap-6">
         
         {videos.map((video, index) => (
