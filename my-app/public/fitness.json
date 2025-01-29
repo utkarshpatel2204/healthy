@@ -1,9 +1,24 @@
 [
     {
-      "heading": "Sample Video",
+      "heading": "Minimalist Baker",
       "date": "2025-01-28",
-      "madeBy": "John Doe",
-      "description": "This is a sample description of the video.",
-      "videoLink": "https://www.youtube.com/watch?v=sampleLink"
+      "madeBy": "Adam Smith",
+      "description": "Your eagerly awaited meal is on its way! We wanted to keep ensure you're prepared for the deliciousness that's about to grace your doorstep.",
+      "videoLink": "/videos/video2.mp4"
+    },
+    {
+      "heading": "Minimalist Baker",
+      "date": "2025-01-27",
+      "madeBy": "Adam Smith",
+      "description": "Your eagerly awaited meal is on its way! We wanted to keep ensure you're prepared for the deliciousness that's about to grace your doorstep.",
+      "videoLink": "/videos/video2.mp4"
+    },
+    {
+      "heading": "Minimalist Baker",
+      "date": "2025-01-26",
+      "madeBy": "Adam Smith",
+      "description": "Your eagerly awaited meal is on its way! We wanted to keep ensure you're prepared for the deliciousness that's about to grace your doorstep.",
+      "videoLink": "/videos/video2.mp4"
     }
   ]
+  
