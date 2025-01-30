@@ -1,7 +1,4 @@
-'use client';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-
 // Define the type for the order data
 interface Order {
   image: string;
@@ -24,25 +21,31 @@ interface Order {
   };
 }
 
-const Orders = () => {
-  const [orders, setOrders] = useState<Order[]>([]);
+// **Server-Side Fetching (Next.js App Router)**
+const fetchOrdersOnServer = async (): Promise<Order[]> => {
+  try {
+    const response = await fetch(`http://localhost:3000/users.json`, {
+      cache: 'no-store', // Ensures fresh data
+    });
 
-  // Fetch orders from a JSON file or API
-  useEffect(() => {
-    const fetchOrders = async () => {
-      try {
-        const response = await fetch('/users.json'); // Update this path for your actual API or JSON file
-        const data = await response.json();
-        setOrders(data.orders || []); // Ensure data matches your expected structure
-      } catch (error) {
-        console.error('Error fetching orders:', error);
-      }
-    };
-    fetchOrders();
-  }, []);
+    if (!response.ok) {
+      throw new Error('Failed to fetch orders');
+    }
+
+    const data = await response.json();
+    return data.orders || [];
+  } catch (error) {
+    console.error('Error fetching orders on server:', error);
+    return [];
+  }
+};
+
+// **Server Component (Fetch Orders on Server)**
+const Orders = async () => {
+  const orders = await fetchOrdersOnServer(); // Fetch orders at request time (SSR)
 
   return (
-    <div className="w-full max-w-[1120px]  mx-auto">
+    <div className="w-full max-w-[1120px] mx-auto">
       <div>
         <h1 className="text-[24px] leading-[24px] mb-[30px]">Orders</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

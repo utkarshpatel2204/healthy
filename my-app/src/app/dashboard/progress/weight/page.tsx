@@ -21,7 +21,6 @@ const weight = () => {
         console.error('Error fetching steps data:', error);
       }
     };
-
     fetchSteps();
   }, []);
 

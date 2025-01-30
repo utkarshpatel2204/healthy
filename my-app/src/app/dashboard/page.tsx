@@ -1,24 +1,16 @@
-'use client';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 
-import { useEffect, useState } from 'react';
-
-export default function DashboardPage() {
-  const [user, setUser] = useState<any>(null);
-
-  useEffect(() => {
-    const storedUser = localStorage.getItem('user');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
-  }, []);
+export default async function DashboardPage() {
+  const user = (await cookies()).get('user');
 
   if (!user) {
-    return <div>Loading...</div>;
+    redirect('/login');
   }
 
   return (
     <div>
-        
+      
     </div>
   );
 }

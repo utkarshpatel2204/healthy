@@ -1,6 +1,5 @@
 'use client'
 import { useState, useEffect } from "react";
-
 interface VideoData {
   heading: string;
   date: string;
@@ -8,7 +7,6 @@ interface VideoData {
   description: string;
   videoLink: string;
 }
-
 const VideoGallery = () => {
   const [videos, setVideos] = useState<VideoData[]>([]);
   const [selectedVideo, setSelectedVideo] = useState<VideoData | null>(null);
